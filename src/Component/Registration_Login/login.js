@@ -5,8 +5,8 @@ import axios from 'axios';
 const SignIn = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    email_id: '',
-    your_pass: ''
+    email_id: 'srwr.tech@gmail.com',
+    your_pass: 'Task@12345'
   });
   const [err, setErr] = useState('');
 
@@ -86,7 +86,7 @@ const SignIn = () => {
                   type="text"
                   name="email_id"
                   id="email_id"
-                  placeholder="Your Email Id"
+                  placeholder="srwr.tech@gmail.com"
                   onChange={handleChange}
                   value={formData.email_id}
                 />
@@ -99,7 +99,7 @@ const SignIn = () => {
                   type="password"
                   name="your_pass"
                   id="your_pass"
-                  placeholder="Password"
+                  placeholder="Task@12345"
                   onChange={handleChange}
                   value={formData.your_pass}
                 />
